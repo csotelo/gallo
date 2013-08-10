@@ -1,0 +1,22 @@
+<div>
+<h2>User Edit</h2>
+</div>
+<div>
+<form method="post" action="">
+<fieldset>
+<label for="firstname"> First Name
+<input type="text" id="firstname" name="firstname" value="{$user.firstname}" />
+</label>
+<br />
+<label for="lastname">Last Name
+<input type="text" id="lastname" name="lastname" value="{$user.lastame}" />
+</label>
+<br />
+<label for="email"> IPV4
+<input type="text" id="email" name="email" value="{$user.email}" />
+</label>
+<input type="hidden" id="id" name="id" value="{$user.id}" />
+<input type="submit" id="submit" name="submit" value="Edit" />
+</fieldset>
+</form>
+</div>

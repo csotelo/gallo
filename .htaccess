@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+   	RewriteEngine on
+   	RewriteRule ^main/(.*)/(.*)/(.*)$ sites/main/index.php?view=$1&tmpl=$2&id=$3 [L]
+   	RewriteRule ^main/(.*)/(.*)$ sites/main/index.php?view=$1&tmpl=$2 [L]
+   	RewriteRule ^$ sites/main/index.php [L]
+   	RewriteRule ^administrator/(.*)/(.*)/(.*)$ sites/administrator/index.php?view=$1&tmpl=$2&id=$3 [L]
+   	RewriteRule ^administrator/(.*)/(.*)$ sites/administrator/index.php?view=$1&tmpl=$2 [L]
+   	RewriteRule ^administrator$ sites/administrator/index.php [L]
+</IfModule>

@@ -1,0 +1,34 @@
+<div>
+<a href="index.php?view=users&tmpl=edit&id={$user.id}">
+<input type="button" value="Edit">
+</a>
+<h2>Users Info</h2>
+</div>
+<div>
+<table>
+<tr>
+<td>User</td>
+<td> {$user.username} </td>
+</tr>
+<tr> 
+<td>First Name</td>
+<td> {$user.firstname} </td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>{$user.lastname}</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>{$user.email}</td>
+</tr>
+<tr>
+<td>Created</td>
+<td>{$user.created}</td>
+</tr>
+<tr>
+<td>Modified</td>
+<td>{$user.modified}</td>
+</tr>
+</table>
+</div>

@@ -1,0 +1,25 @@
+{if $logged == "1"}
+<table with="100%" border="0px" cellpadding="2px" cellspacing="2px">
+<tr><td class="leftnav"><a href="index.php?view=users&tmpl=view&id={$smarty.session.user_id}" style="text-decoration:none;">{$smarty.session.user_firstname}</a></td></tr>
+<tr><td class="leftnav"><a href="index.php?">Home</a></td></tr>
+<tr><td class="leftnav"><a href="index.php?view=localizations&tmpl=index">Entries</a></td></tr>
+<tr><td class="leftnav"><a href="index.php?view=users&tmpl=pswdupdate&id={$smarty.session.user_id}">Password</a></td></tr>
+<tr><td class="leftnav"><a href="index.php?view=users&tmpl=logout">Logout</a></td></tr>
+</table>
+{else}
+<div id="login">
+<form method="post" action="index.php?view=users&tmpl=login"">
+<fielset><legend>Login</legend>
+<label for="username"> User
+<input type="text" name="username" id="username" size="16" value=""/>
+</label>
+<br />
+<label for="userpass"> Password
+<input type="password" name="userpass" id="userpass" size="16" value=""/>
+</label>
+<br />
+<input type="submit" name="submit" id="submit" value="Submit"/>
+</form>
+</div>
+</fielset>
+{/if}
